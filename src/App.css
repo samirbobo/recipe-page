@@ -1,0 +1,114 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+:root {
+  --bodyColor: hsl(30, 54%, 90%);
+  --wihte: hsl(0, 0%, 100%);
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--bodyColor);
+}
+.container {
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+@media (max-width: 540px) {
+  .container {
+    width: 90vw;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .container {
+    width: 80vw;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+#root {
+  display: grid;
+  height: 100vh;
+  place-content: center;
+}
+.main {
+  background: var(--wihte);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  width: 90vw;
+  max-width: 600px;
+}
+.header-img img {
+  width: 100%;
+  border-radius: 0.75rem;
+  height: 250px;
+  object-fit: cover;
+}
+.control-bt {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.control-bt .btn {
+  align-items: center;
+  background-color: #0a66c2;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+.btn:hover,
+.btn:focus {
+  background-color: #16437e;
+  color: #ffffff;
+}
+.btn:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, 0.7);
+}
+.btn:disabled {
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, 0.08);
+  color: rgba(0, 0, 0, 0.3);
+}
+.prev {
+  margin-right: 1rem;
+}
