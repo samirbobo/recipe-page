@@ -1,7 +1,7 @@
 export default function Ingredients() {
   return (
-    <>
-      <article className="ingredients">
+    <section>
+      <article className="m-y-2 ingredients">
         <h2>Ingredients</h2>
         <ul>
           <li>2-3 large eggs</li>
@@ -13,7 +13,7 @@ export default function Ingredients() {
           </li>
         </ul>
       </article>
-      <hr style={{ borderColor: " hsl(330, 100%, 98%)" }} />
-    </>
+      <hr />
+    </section>
   );
 }

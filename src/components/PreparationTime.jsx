@@ -34,7 +34,7 @@ export default function PreparationTime() {
   }, [state.note1]);
 
   return (
-    <article className="preparation">
+    <section className="m-y-2 preparation">
       <h3>Preparation time</h3>
       <ul>
         <NoteList
@@ -62,6 +62,6 @@ export default function PreparationTime() {
       <button className="reset-btn" onClick={handelReset}>
         reset
       </button>
-    </article>
+    </section>
   );
 }
