@@ -4,6 +4,8 @@ import HeaderImg from "./components/HeaderImg";
 import TextOfImg from "./components/TextOfImg";
 import PreparationTime from "./components/PreparationTime";
 import Ingredients from "./components/Ingredients";
+import Instructions from "./components/Instructions";
+import Nutrition from "./components/Nutrition";
 
 function App() {
   useEffect(() => {
@@ -17,6 +19,8 @@ function App() {
       <TextOfImg />
       <PreparationTime />
       <Ingredients />
+      <Instructions />
+      <Nutrition />
     </main>
   );
 }

@@ -16,7 +16,7 @@ export default function HeaderImg() {
   };
 
   return (
-    <div className="header-img">
+    <section className="header-img">
       <img src={imgUrl} alt="omelette" />
       <div className="control-bt">
         <button className="prev btn" onClick={() => handleImageChange(-1)}>
@@ -26,6 +26,6 @@ export default function HeaderImg() {
           Next
         </button>
       </div>
-    </div>
+    </section>
   );
 }
