@@ -1,12 +1,12 @@
 import { useState } from "react";
+import omelette from "../assets/image-omelette.jpeg";
+import makrona from "../assets/makrona.jpg";
+import Ash from "../assets/Ash.jpg";
+import donation from "../assets/donation.jpg";
+
 export default function HeaderImg() {
-  const [imgUrl, setImgUrl] = useState("/src/assets/image-omelette.jpeg");
-  const arrImgs = [
-    "/src/assets/image-omelette.jpeg",
-    "/src/assets/makrona.jpg",
-    "/src/assets/Ash.jpg",
-    "/src/assets/donation.jpg",
-  ];
+  const [imgUrl, setImgUrl] = useState(omelette);
+  const arrImgs = [omelette, makrona, Ash, donation];
 
   const handleImageChange = (indexChange) => {
     const currentImg = arrImgs.indexOf(imgUrl);
